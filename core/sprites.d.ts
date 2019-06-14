@@ -134,7 +134,7 @@ declare namespace cc {
     export class Animation extends Class {
         public ctor():void;
         public ctor(frames:SpriteFrame[], delay:number, loops:number):void;
-
+        public constructor(frames?:SpriteFrame[], delay?:number, loops?:number);
         
         /**
          * @param  {cc.AnimationFrame[]} frames
