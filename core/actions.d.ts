@@ -4650,6 +4650,12 @@ declare namespace cc {
         public ctor():void;
 
         /**
+         * @param  {cc.Animation} animation
+         * @returns cc
+         */
+        public static create(animation: cc.Animation): cc.ActionInterval;
+        
+        /**
          * @return {cc.Animation}
          */
         public getAnimation():Animation;

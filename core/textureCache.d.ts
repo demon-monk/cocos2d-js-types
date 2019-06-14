@@ -24,6 +24,8 @@ declare namespace cc {
          */
         cacheImage(path: string, texture: (Image | HTMLImageElement | HTMLCanvasElement)): void;
 
+        addImage(path: string): Texture2D
+
         /** Returns "<TextureCache | Number of textures = " + this._textures.length + ">"
          * @return string
          */

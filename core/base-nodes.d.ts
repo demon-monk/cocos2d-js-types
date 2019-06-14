@@ -141,6 +141,8 @@ declare module cc {
 
         public constructor();
 
+        public attr(attribute: any): void
+
         /**
          * Initializes the instance of cc.Node
          * @function

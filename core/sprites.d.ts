@@ -135,6 +135,14 @@ declare namespace cc {
         public ctor():void;
         public ctor(frames:SpriteFrame[], delay:number, loops:number):void;
 
+        
+        /**
+         * @param  {cc.AnimationFrame[]} frames
+         * @param  {number} interval in seconds
+         * @returns cc.Animation
+         */
+        public static create(frames: cc.AnimationFrame[], interval: number): cc.Animation;
+
         /**
          * Returns the array of animation frames
          * @return {Array}
@@ -464,7 +472,7 @@ declare namespace cc {
          */
         public static INDEX_NOT_INITIALIZED:number;
 
-        public constructor(fileName:string, rect?:Rect, rotated?:boolean);
+        public constructor(fileName?:string, rect?:Rect, rotated?:boolean);
 
         /**
          * Returns whether the texture have been loaded
@@ -1031,7 +1039,7 @@ declare namespace cc {
      * var frame2 = new cc.SpriteFrame(texture, cc.rect(0,0,90,128),false,0,cc.size(90,128));
      */
     export class SpriteFrame {
-        public constructor(filename:string|Texture2D, rect:Rect, rotated:boolean, offset:Point, originalSize:Size);
+        public constructor(filename:string|Texture2D, rect:Rect, rotated?:boolean, offset?:Point, originalSize?:Size);
 
         /**
          * Returns whether the texture have been loaded
