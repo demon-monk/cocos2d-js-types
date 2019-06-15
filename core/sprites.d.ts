@@ -793,8 +793,8 @@ declare namespace cc {
         public texture:Texture2D;
         public textureAtlas:TextureAtlas;
 
-        public ctor(fileImage?:string|Texture2D, capacity?:number);
-
+        public ctor(fileImage?:string|Texture2D, capacity?:number): void;
+        public constructor(fileImage?: string|Texture2D, capacity?: number)
         /**
          *
          *    This is the opposite of "addQuadFromSprite.

@@ -129,7 +129,7 @@ declare module cc {
         public scheduler:Scheduler;
         public skewX:number;
         public skewY:number;
-        public tag:number;
+        public tag:number | string;
         public userData:any;
         public userObject:Class; // <-- is this return type of cc.Class correct?!? Not sure ...
         public vertexZ:number;
